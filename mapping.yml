@@ -1,0 +1,35 @@
+prefixes:
+  ex: "https://w3id.org/docker/image/#"
+  dc: "http://purl.org/dc/elements/1.1/"
+sources:
+  main-source: ['data.json~jsonpath', '$.*']
+  layer-source: ['data.json~jsonpath', '$.*.RootFS']
+mappings:
+  dockerObject:
+    sources:
+      - main-source
+
+    s: https://w3id.org/docker/image/$(Id)
+    po:
+      - [dc:identifier,$(Id)]
+      - [a, ex:dockerObject]
+      - [ex:author,$(Author)]
+      - [ex:os,$(Os)]
+      - [ex:architecture, $(Architecture)]
+      - [ex:dockerVersion, $(DockerVersion)]
+      - [ex:container, $(Container)]
+      - [ex:size,$(Size)]
+      - p: ex:rootFs
+        o:
+          - mapping : layer
+
+  layer:
+    sources:  
+      - layer-source
+    po:
+      - [a,ex:Layer]
+      - [ex:Layer,$(Layers),xsd:string]
+      
+      
+      
+      
