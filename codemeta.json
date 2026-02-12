@@ -1,0 +1,35 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "@type": "SoftwareSourceCode",
+    "license": {
+        "name": "Apache License 2.0",
+        "url": "https://raw.githubusercontent.com/SoftwareUnderstanding/c2t/main/LICENSE",
+        "identifier": "https://spdx.org/licenses/Apache-2.0",
+        "spdx_id": "Apache-2.0"
+    },
+    "codeRepository": "https://github.com/SoftwareUnderstanding/c2t",
+    "issueTracker": "https://github.com/SoftwareUnderstanding/c2t/issues",
+    "dateCreated": "2022-05-03",
+    "dateModified": "2022-05-06",
+    "downloadUrl": "https://github.com/SoftwareUnderstanding/c2t/releases",
+    "name": "c2t",
+    "programmingLanguage": [
+        "Python"
+    ],
+    "softwareRequirements": [
+        {
+            "name": "morph-kgc",
+            "version": "==1.6.0"
+        }
+    ],
+    "author": [
+        {
+            "@type": "Organization",
+            "@id": "https://github.com/SoftwareUnderstanding"
+        }
+    ],
+    "readme": "https://raw.githubusercontent.com/SoftwareUnderstanding/c2t/main/README.md",
+    "description": [
+        "Container to triples: a package to convert the libraries and packages inside a container into structured information"
+    ]
+}
