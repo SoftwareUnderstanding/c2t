@@ -22,12 +22,6 @@
             "version": "==1.6.0"
         }
     ],
-    "author": [
-        {
-            "@type": "Organization",
-            "@id": "https://github.com/SoftwareUnderstanding"
-        }
-    ],
     "readme": "https://raw.githubusercontent.com/SoftwareUnderstanding/c2t/main/README.md",
     "description": [
         "Container to triples: a package to convert the libraries and packages inside a container into structured information"
